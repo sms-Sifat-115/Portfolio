@@ -1,0 +1,12 @@
+@keyframes blink {
+    0% {  content: "|";}
+    33% {  content: ".|"; }
+    66% {  content: "..|"; }
+    90% {  content: "...|"; }
+}
+
+.blinking::after {
+    content: "...";
+    display: inline-block;
+    animation: blink 1s steps(1) infinite;
+}
