@@ -1,9 +1,15 @@
-const words = ["Critical thinker", "Programmer", "Leader", "Dreamer", "Web developer"];
+const words = ["Critical thinker", "Programmer", "Pioneer", "Visionary", "Web developer", "Entrepreneur", "Debater"];
 const dynamicText = document.getElementById('randomText');
 const randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+let lastWord = '';
 
 function getRandomWord() {
-    return words[Math.floor(Math.random() * words.length)];
+    let newWord;
+    do {
+        newWord = words[Math.floor(Math.random() * words.length)];
+    } while (newWord === lastWord);
+    lastWord = newWord;
+    return newWord;
 }
 
 function getRandomChar() {
@@ -34,8 +40,8 @@ function showInitialDots() {
     setTimeout(() => {
         dynamicText.classList.remove('blinking');
         startRandomTextEffect();
-        setInterval(startRandomTextEffect, 3000); // Change word every 3 seconds
-    }, 3000); // Show blinking dots for 3 seconds
+        setInterval(startRandomTextEffect, 3000); 
+    }, 3000); 
 }
 
 showInitialDots();

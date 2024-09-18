@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -21,7 +23,7 @@
             </div>
             <div class="navbar hidden xl:flex justify-end">
                 <ul class="px-1">
-                  <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-24"><a>About Me</a></li>
+                  <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-12"><a>About Me</a></li>
                   <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-24"><a href="">Achievements</a></li>
                   <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:ml-24"><a>Projects</a></li>
                 </ul>
@@ -65,16 +67,22 @@
             <div class="hero-content flex-col xl:flex-row-reverse">
             <img
                 src="assests/profile-pic.jpg"
-                class="max-w-sm w-full rounded-full shadow-2xl" />
+                class="max-w-sm w-full max-h-max rounded-full shadow-2xl" />
             <div class="lg:mr-16 lg:pr-16">
                 <h2 class="text-3xl">Hi! I'm </h2>
                 <h1 class="text-5xl lg:text-8xl font-bold">S M SANBIM <br> SIFAT</h1>
                 <p class="py-6 text-2xl">And I'm a...</p>
-                <h1 class=" my-4"><span style="font-family: 'Courier New', Courier, monospace; " id="randomText" class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text lg:text-6xl text-4xl font-bold"></span></h1>
+                <h1 class=" mb-14"><span style="font-family: 'Courier New', Courier, monospace; " id="randomText" class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text lg:text-6xl text-4xl font-bold"></span></h1>
+                <div class="grid grid-cols-2 gap-4 xl:w-7/12 mt-8">
+                    <button class="btn btn-outline hover:bg-black hover:text-white hover:font-bold"><i class="fa-brands fa-github"></i> Github</button>
+                    <button class="btn btn-outline text-sky-700 hover:bg-sky-700 hover:text-white hover:font-bold"><i class="fa-brands fa-linkedin-in"></i> Linkedin</button>
+                    <button class="btn btn-outline hover:bg-blue-600 hover:text-white hovere:font-bold text-blue-600"><i class="fa-brands fa-facebook"></i>Facebook</button>
+                    <button class="btn btn-outline hover:font-bold text-fuchsia-400 hover:bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 hover:text-white"><i class="fa-brands fa-instagram"></i>Instagram</button>
+                    <button class="btn text-teal-300 border-teal-400 hover:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% hover:text-white hover:font-bold ml-24 w-full"><i class="fa-solid fa-code"></i>Dev Portfolio</button>
+                    
+                </div>
             </div>
-            <div>
-                
-            </div>
+           
             </div>
         </div>
     <script src="app.js"></script>
