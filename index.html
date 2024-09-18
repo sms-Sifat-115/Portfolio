@@ -7,10 +7,56 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="/assests/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
-    
+    <!-- NavBar Starts -->
+    <section id=" w-full py-5 sm:px-10 px-5 flex justify-between items-center">
+        <div class="navbar bg-base-100 flex w-full screen-max-width">
+            <div class="navbar-start">
+                  <a style="font-family: 'Great vibes', cursive; " class="btn btn-ghost text-4xl hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text italic font-bold lg:ml-5 lg:mt-5">Sifat</a>
+            </div>
+            <div class="navbar hidden  lg:flex justify-end">
+              <ul class="menu menu-horizontal px-1">
+                <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text px-16"><a>About Me</a></li>
+                <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text px-16"><a href="">Achievements</a></li>
+                <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text px-16"><a>Projects</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                  <div class="dropdown dropdown-end lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                      </div>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a>About Me</a></li>
+                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a>Achievements</a></li>
+                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a>Projects</a></li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+    </section>
+    <!-- NavBar Ends -->
+
 
     <script src="app.js"></script>
 </body>
