@@ -1,3 +1,4 @@
+/* Random Words Effect */
 @keyframes blink {
     0% {  content: "|";}
     33% {  content: ".|"; }
@@ -65,3 +66,15 @@
     }
   }
   
+  /* Mouse Pointer Effect */
+  .blob {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    border-radius: 50%;
+    filter: blur(20px);
+    pointer-events: none;
+    transition: transform 0.1s ease;
+}
+

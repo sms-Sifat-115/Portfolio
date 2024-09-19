@@ -59,3 +59,24 @@ window.onpointermove = event => {
     top: `${clientY}px`
   }, { duration: 3000, fill: "forwards" });
 }
+
+// Mouse Pointer Effect
+document.addEventListener('mousemove', (e) => {
+    const blob = document.querySelector('.blob');
+    const hero = document.querySelector('.hero');
+    const heroRect = hero.getBoundingClientRect();
+
+    if (
+        e.clientX >= heroRect.left &&
+        e.clientX <= heroRect.right &&
+        e.clientY >= heroRect.top &&
+        e.clientY <= heroRect.bottom
+    ) {
+        blob.style.transform = `translate(${e.clientX - 50}px, ${e.clientY - 50}px)`;
+        blob.style.opacity = 1;
+    } else {
+        blob.style.opacity = 0;
+    }
+});
+
+
