@@ -1,15 +1,13 @@
-const words = ["Critical thinker", "Programmer", "Future Global Leader", "Visionary", "Web developer", "Entrepreneur", "Debater", "Team Player", "Avid Learner"];
+// Random Text Effect
+const words = ["Web developer", "Future Global Leader", "Programmer", "Citizen Scientist", "Avid Learner", "Global Youth Ambassador", "Critical thinker", "Entrepreneur", "Software Engineer", "Debater", "Team Player", "Visionary"];
 const dynamicText = document.getElementById('randomText');
 const randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-let lastWord = '';
+let currentWordIndex = 0;
 
-function getRandomWord() {
-    let newWord;
-    do {
-        newWord = words[Math.floor(Math.random() * words.length)];
-    } while (newWord === lastWord);
-    lastWord = newWord;
-    return newWord;
+function getNextWord() {
+    const word = words[currentWordIndex];
+    currentWordIndex = (currentWordIndex + 1) % words.length;
+    return word;
 }
 
 function getRandomChar() {
@@ -30,7 +28,7 @@ function displayRandomChars(word, interval) {
 }
 
 function startRandomTextEffect() {
-    const word = getRandomWord();
+    const word = getNextWord();
     const randomInterval = Math.floor(Math.random() * 100) + 50; // Random interval between 50ms and 150ms
     displayRandomChars(word, randomInterval);
 }
@@ -45,6 +43,7 @@ function showInitialDots() {
 }
 
 showInitialDots();
+
 
 
 /* -- Glow effect -- */
@@ -78,5 +77,11 @@ document.addEventListener('mousemove', (e) => {
         blob.style.opacity = 0;
     }
 });
+
+document.addEventListener('mouseout', () => {
+    const blob = document.querySelector('.blob');
+    blob.style.opacity = 0;
+});
+
 
 
