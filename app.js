@@ -1,4 +1,4 @@
-const words = ["Critical thinker", "Programmer", "Pioneer", "Visionary", "Web developer", "Entrepreneur", "Debater"];
+const words = ["Critical thinker", "Programmer", "Future Global Leader", "Visionary", "Web developer", "Entrepreneur", "Debater", "Team Player", "Avid Learner"];
 const dynamicText = document.getElementById('randomText');
 const randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 let lastWord = '';
