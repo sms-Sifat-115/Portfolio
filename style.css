@@ -200,3 +200,15 @@
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
+
+/* Scroll Effect */
+#note {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#note.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

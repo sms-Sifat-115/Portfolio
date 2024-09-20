@@ -14,22 +14,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Portfolio</title>
 </head>
-<body class="mx-2">
+<body>
     <!-- Mouse Pointer Effect -->
     <div class="blob hidden lg:flex"></div>
 
     <!-- NavBar Starts -->
-    <section id="navBar" class="w-full sm:px-10 flex justify-between items-center">
+    <section id="navBar" class="w-full sm:px-10 flex justify-between items-center sticky top-0 z-10">
         <div class="navbar bg-base-100 flex w-full screen-max-width">
             <div class="navbar-start">
-                  <a style="font-family: 'Great vibes', cursive; " class="btn btn-ghost lg:text-4xl text-3xl hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text italic font-bold lg:ml-5 lg:mt-2">Sifat</a>
+                  <a style="font-family: 'Great vibes', cursive; " class="btn btn-ghost lg:text-4xl text-3xl hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text italic font-bold lg:ml-5 lg:mt-2" href="/">Sifat</a>
             </div>
             <div class="navbar hidden xl:flex justify-end xl:ml-72">
                 <ul class="px-1">
                   <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-6"><a>About Me</a></li>
-                  <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-6"><a href="">Certificates</a></li>
-                  <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-6"><a href="">Achievements</a></li>
-                  <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:ml-6"><a>Projects</a></li>
+                  <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-6"><a href="#certificate">Certificates</a></li>
+                  <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-6"><a href="#achievements">Achievements</a></li>
+                  <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:ml-6"><a href="#note">Note</a></li>
                 </ul>
               </div>
               
@@ -54,10 +54,10 @@
                     <ul
                       tabindex="0"
                       class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a>About Me</a></li>
-                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a>Certificates</a></li>
-                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a>Achievements</a></li>
-                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a>Projects</a></li>
+                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a href="">About Me</a></li>
+                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a href="#certificate">Certificates</a></li>
+                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a href="#achievements">Achievements</a></li>
+                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a href="#note">Note</a></li>
                     </ul>
                   </div>
             </div>
@@ -78,11 +78,11 @@
                 <p class="py-6 text-2xl">And I'm a...</p>
                 <h1 class=" mb-14"><span style="font-family: 'Courier New', Courier, monospace; " id="randomText" class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text lg:text-5xl text-3xl font-bold"></span></h1>
                 <div class="grid grid-cols-2 gap-4 xl:w-7/12 mt-8">
-                    <button class="btn btn-outline hover:bg-black hover:text-white hover:font-bold"><i class="fa-brands fa-github"></i> Github</button>
-                    <button class="btn btn-outline text-sky-700 hover:bg-sky-700 hover:text-white hover:font-bold"><i class="fa-brands fa-linkedin-in"></i>Linkedin</button>
-                    <button class="btn btn-outline hover:bg-blue-600 hover:text-white hovere:font-bold text-blue-600"><i class="fa-brands fa-facebook"></i>Facebook</button>
-                    <button class="btn btn-outline hover:font-bold text-fuchsia-400 hover:bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 hover:text-white"><i class="fa-brands fa-instagram"></i>Instagram</button>
-                    <button class="btn text-teal-300 border-teal-400 hover:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% hover:text-white hover:font-bold ml-24 w-full"><i class="fa-solid fa-code"></i>Dev Portfolio</button>
+                    <button class="btn btn-outline hover:bg-black hover:text-white hover:font-bold"><i class="fa-brands fa-github"></i> <a href="https://github.com/sms-Sifat-115?tab=repositories&q=&type=&language=&sort=stargazers" target="_"> Github </a></button>
+                    <button class="btn btn-outline text-sky-700 hover:bg-sky-700 hover:text-white hover:font-bold"><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/s-m-sanbim-sifat/" target="_">Linkedin</a></button>
+                    <button class="btn btn-outline hover:bg-blue-600 hover:text-white hovere:font-bold text-blue-600"><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/s.m.sanbim.sifat.official?mibextid=ZbWKwL" target="_">Facebook</a></button>
+                    <button class="btn btn-outline hover:font-bold text-fuchsia-400 hover:bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 hover:text-white"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/s.sanbim.s?igsh=c2dmZnpzYzEydzli" target="_">Instagram</a></button>
+                    <button class="btn text-teal-300 border-teal-400 hover:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% hover:text-white hover:font-bold ml-24 w-full"><i class="fa-solid fa-code"></i><a href="" target="_">Dev Portfolio</a></button>
                 </div>
             </div>
             </div>
@@ -104,16 +104,13 @@
                 <div class="max-w-md">
                     <h1 class="mb-5 lg:text-5xl text-2xl font-bold text-white">Certificates</h1>
                     <p class="mb-5 text-white font-bold text-sm lg:text-lg">Through out my life I have earn a lot off certificates to showcase my Skills in various fields, Click the button below to see all of credentials</p>
-                    <button class="btn lg:btn-lg font-bold">See All...</button>
+                    <button class="btn lg:btn-lg font-bold"><a href="https://drive.google.com/drive/folders/1nAjDI4-MpEr_oHmO46P8GRbAJmsZYUCw?usp=sharing" target="_">See All...</a></button>
                 </div>
             </div>
         </div>
     </Section>
     <!-- Certificate Banner Ends -->
       
-
-
-
     <!-- Achievements Banner Starts -->
      <section id="achievements" class="my-28">
         <div class="text-center py-5">
@@ -133,7 +130,7 @@
                   <h2 class="card-title text-3xl mb-3">Change Makers</h2>
                   <p>Our team project <span class="font-bold">CholoShikhi</span>, focuses on quality education for the children of under-privileged communities, won the scale-up funding of 50,000 Taka offered by BYLC Ventures and the Kingdom of Netherlands.</p>
                   <div class="card-actions">
-                    <button class="btn btn-primary">Details</button>
+                    <button class="btn btn-primary"><a href="https://www.facebook.com/share/p/t9pvz6SAksTfHjGD/?mibextid=xfxF2i" target="_">Details</a></button>
                   </div>
                 </div>
               </div>
@@ -148,7 +145,7 @@
                   <h2 class="card-title text-3xl font-bold text-3xl">Citizen Scientist</h2>
                   <p class="my-8">Since 2020, I have been engaged with <span class="font-bold">Zoonivese</span>, the world's largest citizen Scientist forum. I have done 3000+ classifications across the field ranging from Astrophysics to Zoology. </p>
                   <div class="card-actions">
-                    <button class="btn btn-primary">Details</button>
+                    <button class="btn btn-primary"><a href="https://www.zooniverse.org/" target="_">Details</a></button>
                   </div>
                 </div>
               </div>
@@ -165,7 +162,7 @@
                       <h2 class="card-title text-3xl my-3">Global Youth Ambassador</h2>
                       <p class="mb-5">I participated in <span class="font-bold">Global Youth Ambassador Programme</span> by <span class="font-bold">HundrED</span>. I met various people from diverse cultures around the globe and shared experiences by social changing initiatives.</p>
                       <div class="card-actions">
-                        <button class="btn btn-primary">Details</button>
+                        <button class="btn btn-primary"><a href="https://hundred.org/en/youth-ambassadors" target="_">Details</a></button>
                       </div>
                     </div>
                   </div>
@@ -180,7 +177,7 @@
                       <h2 class="card-title text-3xl my-3">For A Better Future</h2>
                       <p class="mb-5">Project <span class="font-bold">Nironjon</span> a social development initiative focusing on solving public littering and teach people about climate change. It was my first time taking a role of a leader and organizing events. I learned a lot of thinks during our programs.</p>
                       <div class="card-actions">
-                        <button class="btn btn-primary">Details</button>
+                        <button class="btn btn-primary"><a href="https://sites.google.com/view/projectnironjon/home" target="_">Details</a></button>
                       </div>
                     </div>
                   </div>
@@ -197,7 +194,7 @@
                       <h2 class="card-title xl:text-5xl text-3xl my-3">Unity For A Diverse Bangladesh</h2>
                       <p class="mb-5 text-2xl">In 28 January, 2024 Our team organized an event named <span class="font-bold">Kuasha Utshab</span> showcasing the diverse culture of <span class="font-bold">Bangladesh</span> and call for peace and harmony regardless of race, gender, ethnicity or religion.</p>
                       <div class="card-actions">
-                        <button class="btn btn-primary">Details</button>
+                        <button class="btn btn-primary"><a href="https://www.facebook.com/share/p/EP8HpYT5s4WxGoxo/?mibextid=xfxF2i" target="_">Details</a></button>
                       </div>
                     </div>
                   </div>
@@ -230,10 +227,6 @@
         </div>
       </section>
 
-
-
-
-
      <!-- Footer Starts -->
       <section id="footer" class="mt-10">
         <footer class="footer t items-center p-4">
@@ -252,25 +245,26 @@
               <p>Copyright © 2024 - All right reserved</p>
             </aside>
             <nav class="grid-flow-col gap-4 md:place-self-center md:justify-around text-2xl">
-              <a>
+              <a href="https://github.com/sms-Sifat-115?tab=repositories&q=&type=&language=&sort=stargazers" target="_">
                 <i class="fa-brands fa-github px-2 hover:text-black"></i>
               </a>
-              <a>
+              <a href="https://www.linkedin.com/in/s-m-sanbim-sifat/" target="_">
                 <i class="fa-brands fa-linkedin-in px-2 hover:text-sky-700"></i>
               </a>
-              <a>
+              <a href="https://www.facebook.com/s.m.sanbim.sifat.official?mibextid=ZbWKwL" target="_">
                 <i class="fa-brands fa-facebook px-2 hover:text-blue-600"></i>
               </a>
-              <a>
+              <a href="https://www.instagram.com/s.sanbim.s?igsh=c2dmZnpzYzEydzli" target="_">
                 <i class="fa-brands fa-instagram px-2 hover:bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 hover:text-transparent bg-clip-text"></i>
               </a>
-              <a>
+              <a href="" target="_">
                 <i class="fa-solid fa-code px-2 hover:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% hover:text-transparent bg-clip-text"></i>
               </a>
             </nav>
           </footer>
       </section>
       <!-- Footer Ends -->
+
     <script src="app.js"></script>
 </body>
 </html>

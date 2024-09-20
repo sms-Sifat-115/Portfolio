@@ -105,3 +105,12 @@ for(const star of document.getElementsByClassName("magic-star")) {
     setInterval(() => animate(star), 1000);
   }, index++ * (interval / 3))
 }
+
+// Scroll effect
+document.addEventListener('scroll', () => {
+    const textBox = document.querySelector('#note');
+    const rect = textBox.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      textBox.classList.add('visible');
+    }
+  });
