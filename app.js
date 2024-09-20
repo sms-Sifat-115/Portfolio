@@ -64,12 +64,15 @@ document.addEventListener('mousemove', (e) => {
     const blob = document.querySelector('.blob');
     const hero = document.querySelector('.hero');
     const heroRect = hero.getBoundingClientRect();
+    const navbar = document.querySelector('.navbar');
+    const navbarRect = navbar.getBoundingClientRect();
 
     if (
         e.clientX >= heroRect.left &&
         e.clientX <= heroRect.right &&
         e.clientY >= heroRect.top &&
-        e.clientY <= heroRect.bottom
+        e.clientY <= heroRect.bottom &&
+        e.clientY > navbarRect.bottom
     ) {
         blob.style.transform = `translate(${e.clientX - 50}px, ${e.clientY - 50}px)`;
         blob.style.opacity = 1;
@@ -83,6 +86,7 @@ document.addEventListener('mouseout', () => {
     blob.style.opacity = 0;
 });
 
+// Start Effect
 let index = 0,
     interval = 1000;
 
@@ -103,7 +107,7 @@ for(const star of document.getElementsByClassName("magic-star")) {
     animate(star);
     
     setInterval(() => animate(star), 1000);
-  }, index++ * (interval / 3))
+  }, index++ * (interval / 6))
 }
 
 // Scroll effect

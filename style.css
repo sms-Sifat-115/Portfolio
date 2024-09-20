@@ -75,7 +75,8 @@
     border-radius: 50%;
     filter: blur(20px);
     pointer-events: none;
-    transition: transform 0.1s ease;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+    opacity: 0;
 }
 
 /* Card Gradient effect added */
