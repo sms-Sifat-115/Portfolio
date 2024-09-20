@@ -83,5 +83,3 @@ document.addEventListener('mouseout', () => {
     blob.style.opacity = 0;
 });
 
-
-
