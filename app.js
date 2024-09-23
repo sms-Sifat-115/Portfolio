@@ -29,7 +29,7 @@ function displayRandomChars(word, interval) {
 
 function startRandomTextEffect() {
     const word = getNextWord();
-    const randomInterval = Math.floor(Math.random() * 100) + 50; // Random interval between 50ms and 150ms
+    const randomInterval = Math.floor(Math.random() * 100) + 50; 
     displayRandomChars(word, randomInterval);
 }
 
