@@ -197,7 +197,7 @@
     var(--purple)
   );
   background-size: 200%;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
