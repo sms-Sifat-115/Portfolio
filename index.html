@@ -27,7 +27,7 @@
             </div>
             <div class="navbar hidden xl:flex justify-end xl:ml-72">
                 <ul class="px-1">
-                  <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-6"><a>About Me</a></li>
+                  <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-6"><a href="#about">About Me</a></li>
                   <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-6"><a href="#certificate">Certificates</a></li>
                   <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:mx-6"><a href="#achievements">Achievements</a></li>
                   <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text xl:ml-6"><a href="#note">Note</a></li>
@@ -55,7 +55,7 @@
                     <ul
                       tabindex="0"
                       class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a href="">About Me</a></li>
+                      <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a href="#about">About Me</a></li>
                       <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a href="#certificate">Certificates</a></li>
                       <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a href="#achievements">Achievements</a></li>
                       <li class="hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-transparent bg-clip-text"><a href="#note">Note</a></li>
@@ -92,9 +92,62 @@
     <!-- Hero Ends -->
 
     <!-- About Me Banner Starts -->
-     <section>
-
-     </section>
+    <section id="about" class="parallax min-h-screen flex items-center justify-center hero">
+      <div class="hero-content flex-col-reverse xl:flex-row">
+        <div class="xl:hidden relative w-48 h-48 my-10">
+          <ul class="absolute inset-0 flex items-center justify-center list-none animate-spin" style="animation: spin 30s linear infinite;">
+            <li class="absolute w-12 h-12 border-2 border-black text-3xl text-white hover:bg-black hover:text-white rounded-full flex items-center justify-center" style="top: 0%; left: 50%; transform: translate(-50%, -50%);"><i class="fa-brands fa-github"></i></li>
+            <li class="absolute w-12 h-12 hover:bg-lime-400 hover:text-white border-2 border-lime-400 text-3xl text-lime-400 rounded-full flex items-center justify-center" style="top: 15%; left: 85%; transform: translate(-50%, -50%);"><i class="fa-brands fa-node-js"></i></li>
+            <li class="absolute w-12 h-12 hover:text-white border-2 border-red-600 hover:bg-red-500 text-red-600 text-3xl rounded-full flex items-center justify-center" style="top: 50%; left: 100%; transform: translate(-50%, -50%);"><i class="fa-brands fa-html5"></i></li>
+            <li class="absolute w-12 h-12 hover:bg-sky-400 hover:text-white border-2 border-sky-400 text-3xl text-sky-400 rounded-full flex items-center justify-center" style="top: 85%; left: 85%; transform: translate(-50%, -50%);"><i class="fa-brands fa-react"></i></li>
+            <li class="absolute w-12 h-12 hover:bg-yellow-400 hover:text-white border-2 border-yellow-400 text-3xl text-yellow-400 rounded-full flex items-center justify-center" style="top: 100%; left: 50%; transform: translate(-50%, -50%);"><i class="fa-brands fa-js"></i></li>
+            <li class="absolute w-12 h-12 hover:bg-rose-700 hover:text-white border-2 border-rose-700 text-2xl text-rose-700 rounded-full flex items-center justify-center" style="top: 85%; left: 15%; transform: translate(-50%, -50%);"><i class="fa-solid fa-database"></i></li>
+            <li class="absolute w-12 h-12 hover:bg-blue-700 hover:text-white border-2 border-blue-700 text-3xl text-blue-700 rounded-full flex items-center justify-center" style="top: 50%; left: 0%; transform: translate(-50%, -50%);"><i class="fa-brands fa-css3-alt"></i></li>
+            <li class="absolute w-12 h-12 hover:bg-amber-400 border-2 border-amber-400 text-3xl text-sky-800 rounded-full flex items-center justify-center" style="top: 15%; left: 15%; transform: translate(-50%, -50%);"><i class="fa-brands fa-python"></i></li>
+            <li class="absolute w-12 h-12 text-teal-300 border-teal-400 hover:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% hover:text-white font-bold rounded-full border-2 flex items-center justify-center" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"><i class="fa-solid fa-code"></i></li>
+          </ul>
+        </div>
+        <div class="px-4">
+          <div>
+            <h1 class="text-5xl my-5 text-center font-bold text-white">About Me</h1>
+            <p class="text-white my-3 text-pretty md:text-lg text-xs">Since 2020, I have been a hobbyist Web Developer. I have been fascinated by the power of technology to transform lives and solve complex problems.  This curiosity led me to explore various programming languages and software development tools during my high school years. I have developed a strong
+              foundation in languages such as Python, JavaScript, and C++, and have completed several projects that have honed my
+              skills in coding, debugging, and software design.</p>
+          </div>
+          <div>
+            <h2 class="text-4xl font-semibold text-white my-8">My Technical Skills:</h2>
+            <div class="grid grid-cols-4 md:grid-cols-6 gap-4">
+              <button class="text-black bg-orange-600 text-xs md:text-base btn rounded-full ...">HTML</button>
+              <button class="text-black bg-yellow-500 text-xs md:text-base col-start-2 col-span-2 btn rounded-full ...">Git & Github</button>
+              <button class="text-black bg-sky-600 text-xs md:text-base btn rounded-full ...">CSS</button>
+              <button class="text-black bg-yellow-500 text-xs md:text-base btn rounded-full ...">Python</button>
+              <button class="text-black bg-pink-400 text-xs md:text-base btn rounded-full ...">Figma</button>
+              <button class="text-black bg-sky-600 text-xs md:text-base btn rounded-full ...">C++</button>
+              <button class="text-black bg-orange-600 text-xs md:text-base btn rounded-full ...">SQL</button>
+              <button class="text-black bg-pink-400 text-xs md:text-base btn rounded-full ...">DaisyUI</button>
+              <button class="text-black bg-orange-600 text-xs md:text-base md:col-start-4 col-span-2 btn rounded-full ...">JavaScript</button>
+              <button class="text-black bg-yellow-500 text-xs md:text-base  btn rounded-full ...">PyTorch</button>
+              <button class="text-black bg-pink-400 text-xs md:text-base col-start-1 col-span-2 btn rounded-full ...">Tailwindcss</button>
+              <button class="text-black bg-sky-600 text-xs md:text-base  btn rounded-full ...">ExpressJs</button>
+              <button class="text-black bg-pink-400 text-xs md:text-base btn rounded-full ...">Framer</button>
+              <button class="text-black bg-yellow-500 text-xs md:text-base btn rounded-full ...">Three.js</button>
+              <button class="text-black bg-orange-600 text-xs md:text-base btn rounded-full ...">TypeScript</button>
+              <button class="text-black bg-yellow-500 text-xs md:text-base btn rounded-full ...">Linux</button>
+              <button class="text-black bg-sky-600 text-xs md:text-base btn rounded-full ...">NodeJs</button>
+              <button class="text-black bg-pink-400 text-xs md:text-base btn rounded-full ...">CMS</button>
+              <button class="text-black bg-orange-600 text-xs md:text-base btn rounded-full ...">GSAP</button>
+              <button class="text-black bg-sky-600 text-xs md:text-base col-span-2 btn rounded-full ...">Nextjs</button>
+            </div>
+            <div class="md:flex justify-center my-8 md:my-24">
+              <button class="m-2 md:mx-8 md:w-96 btn btn-outline bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white hover:font-bold"><i class="fa-solid fa-code"></i><a href="https://github.com/sms-Sifat-115/Portfolio" target="_">Source Code</a></button>
+              <button class="m-2 md:mx-8 md:w-96 btn btn-outline bg-rose-600 hover:bg-rose-600 hover:text-white hovere:font-bold text-white" download><i class="fa-regular fa-file"></i>Download CV</button>
+              <button class="m-2 md:mx-8 md:w-96 btn btn-outline bg-indigo-600 hover:bg-blue-600 hover:text-white hovere:font-bold text-white"><i class="fa-solid fa-share-nodes"></i>Live Sites</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- About Me Banner Ends -->
 
      <!-- Certificate Banner Starts -->

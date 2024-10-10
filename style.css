@@ -213,3 +213,30 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Parallax Effect */
+.parallax {
+  background-image: url('/assets/R2.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Spinning Effect */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Fade-in Effect */
+.btn {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.btn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

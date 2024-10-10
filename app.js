@@ -118,3 +118,13 @@ document.addEventListener('scroll', () => {
       textBox.classList.add('visible');
     }
   });
+
+// Fade-in effect
+  document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.querySelectorAll('.btn');
+    elements.forEach((el, index) => {
+        setTimeout(() => {
+            el.classList.add('visible');
+        }, index * 200);
+    });
+});
