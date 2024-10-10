@@ -80,16 +80,9 @@
 }
 
 /* Card Gradient effect added */
-.curd:hover {
-  transform: scale(1.1);
-}
 
 .card-container:hover .card {
   transform: scale(1.05);
-}
-
-.curd {
-  transition: transform 0.3s ease;
 }
 
 .card-container:hover .card:hover {
