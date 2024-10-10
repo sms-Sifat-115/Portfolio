@@ -216,7 +216,7 @@
 
 /* Parallax Effect */
 .parallax {
-  background-image: url('/assets/R2.jpeg');
+  background-image: url('assets/R2.jpeg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
